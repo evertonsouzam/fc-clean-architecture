@@ -27,7 +27,7 @@ productRoute.post("/", async (req: Request, res: Response) => {
 
 productRoute.get("/", async (req: Request, res: Response) => {
   const usecase = new ListProductUseCase(productRepository);
-  const output = await usecase.execute({});
+  const output = await usecase.execute();
   //console.log("Products fetched:", output); // Log 4
 
   res.format({

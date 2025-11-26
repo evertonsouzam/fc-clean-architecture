@@ -8,7 +8,7 @@ export default class ProductFactory {
     type: string,
     name: string,
     price: number
-  ): ProductInterface {
+  ) {
     switch (type) {
       case "a":
         return new Product(uuid(), name, price);
